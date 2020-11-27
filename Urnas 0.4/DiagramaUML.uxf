@@ -4,31 +4,31 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>190</y>
+      <x>20</x>
+      <y>200</y>
       <w>210</w>
-      <h>70</h>
+      <h>50</h>
     </coordinates>
     <panel_attributes>_object: Principal
 --
-id: Long=""
-</panel_attributes>
++main()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>370</x>
-      <y>190</y>
+      <y>180</y>
       <w>210</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>_object: Bola
 --
-id: Long=""
+-color: String
+--
 +Bola() String
 +generar() Bola
-+generarColor() String
+-generarColor() String
 +getColor() String
 +toString() String</panel_attributes>
     <additional_attributes/>
@@ -37,13 +37,16 @@ id: Long=""
     <id>UMLClass</id>
     <coordinates>
       <x>230</x>
-      <y>480</y>
+      <y>470</y>
       <w>210</w>
-      <h>170</h>
+      <h>210</h>
     </coordinates>
     <panel_attributes>_object: Urna
 --
-id: Long=""
+-b1: Bola
+-b2: Bola
+-b3: Bola
+--
 +agregar(Bola b)
 +estaLlena() boolean
 +estaVacia() boolean
@@ -57,49 +60,24 @@ id: Long=""
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>310</y>
-      <w>30</w>
-      <h>190</h>
+      <x>190</x>
+      <y>240</y>
+      <w>80</w>
+      <h>250</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+    <panel_attributes>m2= 1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;230.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>230</x>
-      <y>250</y>
-      <w>30</w>
-      <h>250</h>
+      <x>220</x>
+      <y>210</y>
+      <w>170</w>
+      <h>50</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>450</x>
-      <y>330</y>
-      <w>140</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>Urna formado por
-bolas
-bg=blue</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>70</x>
-      <y>300</y>
-      <w>140</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>Principal contruye 
-urnas
-bg=blue</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
   </element>
 </diagram>
